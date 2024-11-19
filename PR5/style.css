@@ -1,0 +1,89 @@
+/* Основні стилі */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6f9fc, #e9ecef);
+    color: #333;
+}
+
+/* Стиль для хедера */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Навігація */
+nav {
+    margin: 30px auto;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav ul.buttons li {
+    position: relative;
+}
+
+nav ul.buttons li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #4CAF50, #008CBA);
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav ul.buttons li a:hover {
+    background: linear-gradient(45deg, #008CBA, #4CAF50);
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul.buttons li a:active {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    nav ul.buttons li a {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul.buttons li a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
