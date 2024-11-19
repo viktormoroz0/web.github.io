@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Генератор</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="css-generator">
+        <ul class="tabs">
+            <li class="active" onclick="switchTab(event, 'border-radius')">border-radius</li>
+            <li onclick="switchTab(event, 'float')">float</li>
+            <li onclick="switchTab(event, 'font-family')">font-family</li>
+        </ul>
+
+        <!-- Вкладка Border-radius -->
+        <div id="border-radius" class="tabContent active">
+            <div>Верхній лівий радіус:
+                <input type="range" id="rtl" min="0" max="100" value="20" oninput="generate()">
+                <input type="text" id="ttl" value="20" oninput="generate()">
+            </div>
+            <div>Верхній правий радіус:
+                <input type="range" id="rtr" min="0" max="100" value="30" oninput="generate()">
+                <input type="text" id="ttr" value="30" oninput="generate()">
+            </div>
+            <div>Нижній правий радіус:
+                <input type="range" id="rbr" min="0" max="100" value="40" oninput="generate()">
+                <input type="text" id="tbr" value="40" oninput="generate()">
+            </div>
+            <div>Нижній лівий радіус:
+                <input type="range" id="rbl" min="0" max="100" value="10" oninput="generate()">
+                <input type="text" id="tbl" value="10" oninput="generate()">
+            </div>
+        </div>
+
+        <!-- Вкладка Float -->
+        <div id="float" class="tabContent">
+            <div>Float:
+                <select id="float-value" onchange="generate()">
+                    <option value="none">None</option>
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Вкладка Font-family -->
+        <div id="font-family" class="tabContent">
+            <div>Font-family:
+                <select id="font-family-value" onchange="generate()">
+                    <option value="Arial, sans-serif">Arial</option>
+                    <option value="Verdana, sans-serif">Verdana</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="'Times New Roman', serif">Times New Roman</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Відображення блоку -->
+        <div id="block">Текст</div>
+
+        <!-- Відображення CSS -->
+        <textarea id="code" readonly></textarea>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
