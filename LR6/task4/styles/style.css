@@ -1,0 +1,13 @@
+#loader {
+  font-size: 18px;
+  color: blue;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#result {
+  font-size: 20px;
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+}

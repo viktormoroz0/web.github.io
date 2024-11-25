@@ -1,0 +1,11 @@
+#loader {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#result {
+  font-size: 20px;
+  color: #2ecc71;
+  text-align: center;
+  margin-top: 20px;
+}
