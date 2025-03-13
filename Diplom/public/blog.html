@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+            name="description"
+            content="Сторінка блогу" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel = "icon" type = "image/png" href = "favicon.ico">
+    <title>RiseFinance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+<nav class="nav-scroll dark">
+    <div class="container">
+        <a href="index.html"><img src="images/logo.png" alt="Logo of the RiseFinance" class="logo"></a>
+        <div class="burger" onclick="toggleBurger()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="services.html">Послуги</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="container">
+        <div class="content">
+            <h1>Блог про фінанси</h1>
+            <p>Актуальні новини, тренди та корисні поради у світі фінансів. Дізнавайтеся,
+                як керувати своїми грошима, інвестувати та досягати фінансової незалежності.</p>
+            <a href="#" class="btn" onclick="openModal()">Безкоштовна консультація</a>
+        </div>
+        <div class="modal" id="consultModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Запис на безкоштовну консультацію</h2>
+                <form id="consultation-form">
+                    <input type="text" id="name" placeholder="Ваше ПІБ" required>
+                    <input type="email" id="email" placeholder="Ваш email" required>
+                    <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+                    <button type="submit" class="btn">Надіслати</button>
+                </form>
+            </div>
+        </div>
+        <div class="cards"></div>
+    </div>
+</header>
+<section class="blog-slider">
+    <div class="container con-relative">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="blog-post">
+                        <h2>Як ефективно інвестувати у 2025 році?</h2>
+                        <p>У 2025 році ефективне інвестування потребує гнучкості та глибокого аналізу. Основні тренди включають стійкі інвестиції, криптовалютний ринок та технологічні компанії.</p>
+                        <ul>
+                            <li>Диверсифікуйте портфель.</li>
+                            <li>Враховуйте макроекономічні фактори.</li>
+                            <li>Інвестуйте у проекти з високим потенціалом зростання.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="blog-post">
+                        <h2>Фінансове планування для бізнесу</h2>
+                        <p>Ефективне фінансове планування допомагає бізнесу залишатися прибутковим. Основні аспекти планування включають аналіз доходів та витрат, розробку стратегії інвестування та контроль фінансових ризиків.</p>
+                        <ul>
+                            <li>Створення фінансового плану на 1–3 роки.</li>
+                            <li>Регулярний перегляд та коригування бюджету.</li>
+                            <li>Оптимізація податкових зобов’язань.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="blog-post">
+                        <h2>Чому фінансові консультанти стали такими популярними?</h2>
+                        <p>Зростання складності фінансових ринків зробило фінансових консультантів незамінними. Вони допомагають людям ухвалювати обґрунтовані рішення щодо інвестицій, податків та пенсійного планування.</p>
+                        <ul>
+                            <li>Персоналізовані фінансові стратегії.</li>
+                            <li>Допомога у виборі вигідних інвестицій.</li>
+                            <li>Захист від фінансових ризиків.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="blog-post">
+                        <h2>Основи фінансової грамотності</h2>
+                        <p>Фінансова грамотність допомагає уникати боргів та ефективно управляти особистими коштами. Ключові аспекти включають ведення бюджету, створення резервного фонду та розуміння принципів інвестування.</p>
+                        <p>Головні правила:</p>
+                        <ul>
+                            <li>Витрачайте менше, ніж заробляєте.</li>
+                            <li>Інвестуйте хоча б 10% доходу.</li>
+                            <li>Завжди майте фінансову "подушку".</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="blog-post">
+                        <h2>Як керувати особистими фінансами ефективно?</h2>
+                        <ul>
+                            <li><strong>Створіть бюджет:</strong> Відстежуйте доходи та витрати, щоб зрозуміти, куди йдуть ваші гроші.</li>
+                            <li><strong>Інвестуйте:</strong> Розгляньте різні фінансові інструменти, такі як депозити, акції або нерухомість.</li>
+                            <li><strong>Диверсифікуйте доходи:</strong> Не покладайтеся лише на одне джерело доходу, шукайте додаткові можливості.</li>
+                            <li><strong>Оптимізуйте борги:</strong> Закривайте високопроцентні кредити в першу чергу.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<section class="finance-tips">
+    <div class="container">
+        <h2>Фінансові поради дня</h2>
+        <div class="tips-grid">
+            <div class="tip">
+                <h3>1. Відкладай 20% доходу</h3>
+                <p>Формування фінансової "подушки безпеки" допоможе уникнути стресу у непередбачуваних ситуаціях.</p>
+            </div>
+            <div class="tip">
+                <h3>2. Інвестуй у себе</h3>
+                <p>Освіта, навички та здоров'я — це найкращі активи, які приносять довгостроковий дохід.</p>
+            </div>
+            <div class="tip">
+                <h3>3. Контролюй витрати</h3>
+                <p>Розділи витрати на необхідні, бажані та непотрібні, щоб уникнути марнотратства.</p>
+            </div>
+            <div class="tip">
+                <h3>4. Диверсифікуй інвестиції</h3>
+                <p>Не клади всі гроші в один актив. Вкладення у різні сфери допоможуть мінімізувати ризики.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq">
+    <div class="container">
+        <h2>Часто задавані питання</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">Що таке фінансові консультації?</h3>
+            <p class="faq-answer">Фінансові консультації допомагають отримати професійну допомогу у питаннях управління грошима, інвестування та планування фінансів для бізнесу та приватних осіб.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Як можна записатися на консультацію?</h3>
+            <p class="faq-answer">Записатися на консультацію можна через наш сайт або зв'язавшись з нами по телефону або електронній пошті.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Які послуги входять у фінансову консультацію?</h3>
+            <p class="faq-answer">Наші фінансові консультації включають допомогу в плануванні бюджету, інвестиційному консультуванні, аналізі ризиків та стратегічному фінансовому плануванні.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Які фінансові питання можна вирішити за допомогою консультацій?</h3>
+            <p class="faq-answer">Ми допомагаємо вирішити різноманітні фінансові питання, такі як управління боргами, інвестиції в нерухомість, планування пенсії, оптимізація податків та інші.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Чи є обмеження щодо того, хто може скористатися послугами?</h3>
+            <p class="faq-answer">Наші послуги доступні для будь-яких осіб, незалежно від їхнього рівня доходу чи досвіду в сфері фінансів. Ми надаємо консультації як для фізичних осіб, так і для бізнесів будь-якого розміру.</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <img src="images/logo_dark.png" alt="logo of RiseFinance">
+        <div class="footer-table">
+            <div class="col">
+                <p class="col-head">Послуги</p>
+                <a href="services.html#service-cards">Консультації для бізнесу</a>
+                <a href="services.html#service-cards">Консультації для приватних осіб</a>
+                <a href="services.html#service-cards">Спеціалізовані послуги</a>
+            </div>
+            <div class="col">
+                <p class="col-head">Компанія</p>
+                <a href="index.html">Головна</a>
+                <a href="blog.html">Блог</a>
+                <a href="about.html">Про нас</a>
+                <a href="services.html">Послуги</a>
+                <a href="contacts.html">Контакти</a>
+            </div>
+            <div class="col">
+                <p class="col-head">Підпишіться на нашу розсилку</p>
+                <p>Фінансування, модель freemium, довгохвості гіпотези, перевага першопрохідця, активи, право власності</p>
+            </div>
+        </div>
+        <p class="copyright">
+            Design with love © TanahAirStudio 2020. All right reserved
+        </p>
+    </div>
+</footer>
+<div id="overlay"></div>
+<div class="popup">
+    <button id="close">&times;</button>
+    <h3>Вітаємо на сторінці компанії RiseFinance</h3>
+    <p>Запускайте свої фінтех-продукти для клієнтів швидко та надійно. Безпека та висока гнучкість. Rise Finance — найкращий партнер для вас, якщо ви хочете масштабувати свої фінансові продукти на глобальний ринок.</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

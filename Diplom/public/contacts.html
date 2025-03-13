@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+        name="description"
+        content="На цій сторінці розміщені контакти компанії RiseFinance" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel = "icon" type = "image/png" href = "favicon.ico">
+    <title>RiseFinance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-scroll dark">
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo of the RiseFinance" class="logo"></a>
+            <div class="burger" onclick="toggleBurger()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="services.html">Послуги</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="form">
+            <div class="container">
+                <div class="content">
+                    <h2 class="highlight">Приєднуйтесь до нашої команди!</h2>
+                    <p>Ми шукаємо фінансових консультантів, які готові розвиватися разом із нами. Якщо ви амбітні,
+                        професійні та маєте досвід у фінансовій сфері — запрошуємо до співпраці!</p>
+                    <div class="contact">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i>
+                        </div>
+                        <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+                    </div>
+                    <div class="contact">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
+                        </div>
+                        <a href="https://www.google.com/maps/dir//вулиця+Творча,+15,+Київ,+02000/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x40d4c91e683ef35b:0x44af966dfbf3db11?sa=X&ved=1t:707&ictx=111">
+                            м. Київ, вул. Творча, 15, офіс 24</a>
+                    </div>
+                    <div class="contact">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+                        </div>
+                        <a href="mailto:contact@yourproject.ua">contact@yourproject.ua</a>
+                    </div>
+                </div>
+                <form id="contact-form" method="post">
+                    <div>
+                        <label for="name">Ім'я</label>
+                        <input type="text" id="name" name="name" placeholder="Ім'я" required>
+                    </div>
+                    <div>
+                        <label for="surname">Прізвище</label>
+                        <input type="text" id="surname" name="surname" placeholder="Прізвище" required>
+                    </div>
+                    <div>
+                        <label for="email">Електронна пошта</label>
+                        <input type="email" id="email" name="email" placeholder="Електронна пошта" required>
+                    </div>
+                    <div>
+                        <label for="phone">Номер телефону</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Номер телефону" maxlength="12" required inputmode="numeric" oninput="this.value = this.value.replace(/\D/g, '')">
+                    </div>
+                    <button type="submit" class="btn">Надіслати заявку</button>
+                </form>
+            </div>
+        </section>
+        <div class="indicator">
+            <span id="indicator-text">Зв'яжіться з нами!</span>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <img src="images/logo_dark.png" alt="logo of RiseFinance">
+            <div class="footer-table">
+                <div class="col">
+                    <p class="col-head">Послуги</p>
+                    <a href="services.html#service-cards">Консультації для бізнесу</a>
+                    <a href="services.html#service-cards">Консультації для приватних осіб</a>
+                    <a href="services.html#service-cards">Спеціалізовані послуги</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Компанія</p>
+                    <a href="index.html">Головна</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="services.html">Послуги</a>
+                    <a href="contacts.html">Контакти</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Підпишіться на нашу розсилку</p>
+                    <p>Фінансування, модель freemium, довгохвості гіпотези, перевага першопрохідця, активи, право власності</p>
+                </div>
+            </div>
+            <p class="copyright">
+                Design with love © TanahAirStudio 2020. All right reserved
+            </p>
+        </div>
+    </footer>
+    <div id="overlay"></div>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h3>Вітаємо на сторінці компанії RiseFinance</h3>
+        <p>Запускайте свої фінтех-продукти для клієнтів швидко та надійно. Безпека та висока гнучкість. Rise Finance — найкращий партнер для вас, якщо ви хочете масштабувати свої фінансові продукти на глобальний ринок.</p>
+    </div>
+    <script src="js/popup.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

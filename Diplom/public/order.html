@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+            name="description"
+            content="компанія RiseFinance"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel = "icon" type = "image/png" href = "favicon.ico">
+    <title>RiseFinance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-scroll dark">
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo of the RiseFinance" class="logo"></a>
+            <div class="burger" onclick="toggleBurger()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="services.html">Послуги</a></li>
+        </ul>
+    </nav>
+    <header class="services-header order-container">
+        <div class="container order-container">
+            <div class="content">
+                <h1>Замовлення</h1>
+            </div>
+        </div>
+    </header>
+    <section class="order">
+        <div class="container modal-content-two">
+            <h2>Послуга: <span id="service-name"></span></h2>
+            <form id="order-form">
+                <div class="container-order-form">
+                    <div class="step1">
+                        <input type="text" id="name" placeholder="Ваше ПІБ" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Номер телефону" maxlength="12" required inputmode="numeric" oninput="this.value = this.value.replace(/\D/g, '')">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="step2">
+                        <h3>Додаткові опції</h3>
+                        <label>
+                            <input type="radio" name="format" value="Онлайн" checked> Онлайн консультація
+                        </label>
+                        <label>
+                            <input type="radio" name="format" value="Офлайн"> Офлайн зустріч
+                        </label>
+                        <label>
+                            <input type="checkbox" id="report"> Потрібен детальний звіт
+                        </label>
+                    </div>
+                </div>
+                <button type="button" id="place-order-btn" class="btn">Замовити</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img src="images/logo_dark.png" alt="logo of RiseFinance">
+            <div class="footer-table">
+                <div class="col">
+                    <p class="col-head">Послуги</p>
+                    <a href="services.html#service-cards">Консультації для бізнесу</a>
+                    <a href="services.html#service-cards">Консультації для приватних осіб</a>
+                    <a href="services.html#service-cards">Спеціалізовані послуги</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Компанія</p>
+                    <a href="index.html">Головна</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="#">Послуги</a>
+                    <a href="contacts.html">Контакти</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Підпишіться на нашу розсилку</p>
+                    <p>Фінансування, модель freemium, довгохвості гіпотези, перевага першопрохідця, активи, право власності</p>
+                </div>
+            </div>
+            <p class="copyright">
+                Design with love © TanahAirStudio 2020. All right reserved
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>

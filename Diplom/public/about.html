@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+        name="description"
+        content="На цій сторінці розміщена інформація про команду RiseFinance" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel = "icon" type = "image/png" href = "favicon.ico">
+    <title>RiseFinance - About</title>
+</head>
+<body>
+    <nav class="nav-scroll">
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo of the RiseFinance" class="logo"></a>
+            <div class="burger" onclick="toggleBurger()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="services.html">Послуги</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="content">
+                <h1><span class="highlight">Ваш ФінТех</span> від А до Я</h1>
+                <p>Познайомтеся з командою Rise Finance — експертами, які стоять за нашими інноваційними фінтех-рішеннями. Ми об'єднуємо професіоналів з багаторічним досвідом у фінансах та технологіях, щоб забезпечити вам швидкі, надійні та безпечні послуги.</p>
+                <a href="#" class="btn" onclick="openModal()">Безкоштовна консультація</a>
+            </div>
+            <div class="modal" id="consultModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Запис на безкоштовну консультацію</h2>
+                    <form id="consultation-form">
+                        <input type="text" id="name" placeholder="Ваше ПІБ" required>
+                        <input type="email" id="email" placeholder="Ваш email" required>
+                        <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+                        <button type="submit" class="btn">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+            <div class="cards"></div>
+        </div>
+    </header>
+    <main>
+        <section id="numbers">
+            <h2 class="highlight">Наші досягнення в числах</h2>
+            <div class="container">
+                <div class="card">
+                    <p class="big-num highlight">100+</p>
+                    <h4>Велика сім'я</h4>
+                    <p>Понад 100 вдалих співпраць, від консультацій до випадків "під ключ"</p>
+                </div>
+                <div class="card">
+                    <p class="big-num highlight">100%</p>
+                    <h4>Успіх</h4>
+                    <p>100% Успішних кейсів, гарантія на всі варіанти ризиків</p>
+                </div>
+                <div class="card">
+                    <p class="big-num highlight">5М+</p>
+                    <h4>Фінанси</h4>
+                    <p>Обіг коштів в межах компанії понад 5М$</p>
+                </div>
+            </div>
+        </section>
+        <section id="mission">
+            <div class="container">
+                <div class="content">
+                    <h2 class="highlight">Наша Місія — Інноваційні Фінтех Рішення для Вашого Успіху</h2>
+                    <p>У Rise Finance ми створюємо безпечні, зручні та масштабовані фінансові рішення для швидкого зростання вашого бізнесу на світовому ринку.</p>
+                    <ul>
+                        <li>Фінтех-розробка — індивідуальні продукти для ваших потреб.</li>
+                        <li>Захист даних — багаторівнева безпека для захисту інформації.</li>
+                        <li>Масштабування — розширення бізнесу без ризику.</li>
+                        <li>Інтеграція API — об’єднання сервісів з вашими системами.</li>
+                        <li>Аналітика — оптимізація рішень через аналіз даних.</li>
+                        <li>Підтримка 24/7 — цілодобова технічна допомога.</li>
+                    </ul>
+                </div>
+                <div class="image-wrapper">
+                    <img src="images/manage.jpg" alt="Наш менеджер Іван Котляревський">
+                </div>
+            </div>
+        </section>
+        <section id="team">
+            <h2 class="highlight">Наша Команда</h2>
+            <div class="container">
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="images/ivanna.avif" alt="Наша CEO Іванна Гарбуз">
+                    </div>
+                    <h4>Іванна Гарбуз</h4>
+                    <p>CEO</p>
+                </div>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="images/cho.jpg" alt="Наша HR Чо Ченг">
+                    </div>
+                    <h4>Чо Ченг</h4>
+                    <p>HR</p>
+                </div>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="images/raga.jpeg" alt="Наш SMM Раджа Карі">
+                    </div>
+                    <h4>Раджа Карі</h4>
+                    <p>SMM</p>
+                </div>
+            </div>
+        </section>
+        <div class="indicator">
+            <span id="indicator-text">Вітаємо!</span>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <img src="images/logo_dark.png" alt="logo of RiseFinance">
+            <div class="footer-table">
+                <div class="col">
+                    <p class="col-head">Послуги</p>
+                    <a href="services.html#service-cards">Консультації для бізнесу</a>
+                    <a href="services.html#service-cards">Консультації для приватних осіб</a>
+                    <a href="services.html#service-cards">Спеціалізовані послуги</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Компанія</p>
+                    <a href="index.html">Головна</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="services.html">Послуги</a>
+                    <a href="contacts.html">Контакти</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Підпишіться на нашу розсилку</p>
+                    <p>Фінансування, модель freemium, довгохвості гіпотези, перевага першопрохідця, активи, право власності</p>
+                </div>
+            </div>
+            <p class="copyright">
+                Design with love © TanahAirStudio 2020. All right reserved
+            </p>
+        </div>
+    </footer>
+    <div id="overlay"></div>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h3>Вітаємо на сторінці компанії RiseFinance</h3>
+        <p>Запускайте свої фінтех-продукти для клієнтів швидко та надійно. Безпека та висока гнучкість. Rise Finance — найкращий партнер для вас, якщо ви хочете масштабувати свої фінансові продукти на глобальний ринок.</p>
+    </div>
+    <script src="js/popup.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

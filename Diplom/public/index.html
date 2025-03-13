@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+        name="description"
+        content="Головна сторінка компанії RiseFinance">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel = "icon" type = "image/png" href = "favicon.ico">
+    <title>RiseFinance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<nav class="nav-scroll">
+    <div class="container">
+        <a href="index.html"><img src="images/logo.png" alt="Logo of the RiseFinance" class="logo"></a>
+        <div class="burger" onclick="toggleBurger()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="services.html">Послуги</a></li>
+    </ul>
+</nav>
+<header>
+        <div class="container">
+            <div class="content">
+                <h1><span class="highlight">Масштабуйте ФінТех</span> Безпечно та Надійно</h1>
+                <p>Запускайте свої фінтех-продукти для клієнтів швидко та надійно. Безпека та висока гнучкість. Rise Finance — найкращий партнер для вас, якщо ви хочете масштабувати свої фінансові продукти на глобальний ринок.</p>
+                <a href="#" class="btn" onclick="openModal()">Безкоштовна консультація</a>
+            </div>
+            <div class="modal" id="consultModal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Запис на безкоштовну консультацію</h2>
+                    <form id="consultation-form">
+                        <input type="text" id="name" placeholder="Ваше ПІБ" required>
+                        <input type="email" id="email" placeholder="Ваш email" required>
+                        <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+                        <button type="submit" class="btn">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+            <div class="cards"></div>
+            <div class="partners">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="consulting">
+            <div class="container">
+                <h2 class="highlight">Консалтинг для Фінтех-Стартапів</h2>
+                <p>Наша команда складається з досвідчених експертів у сфері фінансів, технологій та науки. Така комбінація дозволяє нам забезпечувати найкращі результати для всіх наших клієнтів.</p>
+                <div class="image-wrapper"><img src="images/graph.png" alt="graph"></div>
+            </div>
+        </section>
+        <section id="delivering">
+            <h2 class="highlight">Створюємо на кожному етапі виробництва</h2>
+            <div class="container">
+                <div class="image-wrapper">
+                    <img src="images/chart.png" alt="chart">
+                </div>
+                <div class="content">
+                    <h3>Процес&ensp;розробки</h3>
+                    <p>Стратегічні етапи, які ми проходимо з кожним клієнтом, дозволяють впроваджувати високоефективні процеси, навіть у швидкозростаючих стартапах, що прагнуть масштабуватися якомога швидше.</p>
+                    <ol type="1">
+                        <li>
+                            <i class="fa-solid fa-chart-bar" style="color: #ffffff;"></i>
+                            Аналіз</li>
+                        <li>
+                            <i class="fa-solid fa-chart-line" style="color: #ffffff;"></i>
+                            Етап зростання</li>
+                        <li>
+                            <i class="fa-solid fa-money-bill" style="color: #ffffff;"></i>
+                            Прибуток</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <div class="right-light">
+            <section id="cases">
+                <h2 class="highlight">Аналіз випадків</h2>
+                <p>Деякі результати наших клієнтів</p>
+                <div class="container">
+                    <div class="content">
+                        <h3>Coruma Finance</h3>
+                        <p>Це міжнародна компанія, що спеціалізується на злиттях та поглинаннях у сфері технологій.</p>
+                        <a href="about.html" class="btn">Дізнатись більше</a>
+                        <img src="images/case-logo.svg" alt="logo of partner">
+                    </div>
+                    <ul>
+                        <li>Залучено 8 постійних клієнтів</li>
+                        <li>Зріст на 300% у перший рік</li>
+                        <li>Найнято 24 талановитих розробників</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="finance">
+                <h2 class="highlight">Coruma Finance</h2>
+                <p>Це міжнародна компанія, що спеціалізується на злиттях та поглинаннях у сфері технологій.</p>
+                <div class="container">
+                    <ul class="content">
+                        <li>Залучено 8 постійних клієнтів</li>
+                        <li>Зріст на 300% у перший рік</li>
+                        <li>Найнято 24 талановитих розробників</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="indicator">
+            <span id="indicator-text">Вітаємо!</span>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <img src="images/logo_dark.png" alt="logo of RiseFinance">
+            <div class="footer-table">
+                <div class="col">
+                    <p class="col-head">Послуги</p>
+                    <a href="services.html#service-cards">Консультації для бізнесу</a>
+                    <a href="services.html#service-cards">Консультації для приватних осіб</a>
+                    <a href="services.html#service-cards">Спеціалізовані послуги</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Компанія</p>
+                    <a href="index.html">Головна</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="services.html">Послуги</a>
+                    <a href="contacts.html">Контакти</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Підпишіться на нашу розсилку</p>
+                    <p>Фінансування, модель freemium, довгохвості гіпотези, перевага першопрохідця, активи, право власності</p>
+                </div>
+            </div>
+            <p class="copyright">
+                Design with love © TanahAirStudio 2020. All right reserved
+            </p>
+        </div>
+    </footer>
+    <div id="overlay"></div>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h3>Вітаємо на сторінці компанії RiseFinance</h3>
+        <p>Запускайте свої фінтех-продукти для клієнтів швидко та надійно. Безпека та висока гнучкість. Rise Finance — найкращий партнер для вас, якщо ви хочете масштабувати свої фінансові продукти на глобальний ринок.</p>
+    </div>
+    <script src="js/popup.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

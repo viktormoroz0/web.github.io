@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+            name="description"
+            content="компанія RiseFinance послуги" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel = "icon" type = "image/png" href = "favicon.ico">
+    <title>RiseFinance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-scroll dark">
+        <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="Logo of the RiseFinance" class="logo"></a>
+            <div class="burger" onclick="toggleBurger()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="#">Послуги</a></li>
+        </ul>
+    </nav>
+    <header class="services-header">
+        <div class="container">
+            <div class="content">
+                <h1>Наші послуги</h1>
+                <p>
+                    Експертні фінансові консультації для бізнесу та приватних осіб
+                    <br><br>
+                    Ми допомагаємо підприємцям оптимізувати фінансові процеси,
+                    знижувати ризики та підвищувати прибутковість.
+                    Для приватних осіб ми пропонуємо персоналізовані фінансові стратегії,
+                    що допоможуть ефективно керувати бюджетом та інвестиціями.
+                    <br><br>
+                    З нами ви отримаєте чіткий план дій, який дозволить вам досягти
+                    фінансової стабільності та впевненості у завтрашньому дні.
+                </p>
+            </div>
+            <div class="cards"></div>
+        </div>
+    </header>
+    <section class="services" id="service-cards">
+        <div class="container">
+            <h2 class="section-title">Наші фінансові послуги</h2>
+            <p class="section-description">
+                Ми пропонуємо широкий спектр фінансових консультацій для бізнесу та приватних осіб.
+                Отримайте експертну підтримку у створенні фінансової стратегії,
+                оптимізації податків та управлінні інвестиціями.
+            </p>
+            <div class="service-cards-container" id="service-cards-container">
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Відгуки наших клієнтів</h2>
+            <div class="testimonials-container" id="testimonials-container">
+            </div>
+        </div>
+    </section>
+    <section class="add-review">
+        <div class="container">
+            <h2>Залишити відгук</h2>
+            <form id="review-form">
+                <input type="text" id="review-author" placeholder="Ваше ім'я" required>
+                <textarea id="review-text" placeholder="Ваш відгук" required></textarea>
+                <button type="button" class="btn-review" id="submit-review-btn">Відправити</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img src="images/logo_dark.png" alt="logo of RiseFinance">
+            <div class="footer-table">
+                <div class="col">
+                    <p class="col-head">Послуги</p>
+                    <a href="#service-cards">Консультації для бізнесу</a>
+                    <a href="#service-cards">Консультації для приватних осіб</a>
+                    <a href="#service-cards">Спеціалізовані послуги</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Компанія</p>
+                    <a href="index.html">Головна</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="#">Послуги</a>
+                    <a href="contacts.html">Контакти</a>
+                </div>
+                <div class="col">
+                    <p class="col-head">Підпишіться на нашу розсилку</p>
+                    <p>Фінансування, модель freemium, довгохвості гіпотези, перевага першопрохідця, активи, право власності</p>
+                </div>
+            </div>
+            <p class="copyright">
+                Design with love © TanahAirStudio 2020. All right reserved
+            </p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>
